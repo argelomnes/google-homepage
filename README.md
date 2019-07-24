@@ -6,5 +6,6 @@ From The Odin Project's [curriculum](http://www.theodinproject.com/courses/web-d
 
 
 
-**Icon made by** [**Robin Kylander**](https://www.flaticon.com/authors/robin-kylander) **from** **www.flaticon.com**
+##### Credit:
 
+Menu icon made by [Robin Kylander](https://www.flaticon.com/authors/robin-kylander) from www.flaticon.com
