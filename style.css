@@ -1,3 +1,5 @@
+/* base
+--------------------------------------------------*/
 *,
 *::after,
 *::before {
@@ -12,6 +14,7 @@ html {
 
 body {
     box-sizing: border-box;
+
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.3rem;
     line-height: 1;
@@ -25,10 +28,14 @@ a {
     text-decoration: none;
 }
 
+/* header
+--------------------------------------------------*/
 header {
-    padding: 1rem 2rem;
     display: flex;
     justify-content: flex-end;
+    padding: 0.5rem 2rem;
+
+    /* background: yellow; */
 }
 
 nav ul {
@@ -46,9 +53,11 @@ nav a {
 
 .app-menu {
     height: 16px;
-    /* width: 16px; */
-    fill: #777;
+
     transition: 0.3s;
+    /* width: 16px; */
+
+    fill: #777;
 }
 
 .app-menu:hover {
@@ -56,7 +65,87 @@ nav a {
 }
 
 .user-photo {
-    border-radius: 50%;
-    height: 3.2rem;
     align-self: center;
+    height: 3.2rem;
+
+    border-radius: 50%;
+}
+
+/* main content
+--------------------------------------------------*/
+main {
+    max-width: 600px;
+    /* background: lightsalmon; */
+    margin: 13rem auto auto;
+
+    text-align: center;
+}
+
+form {
+    margin: 3rem 0;
+}
+.google {
+    max-width: 27rem;
+}
+
+input[type='search'] {
+    width: 90%;
+    margin-bottom: 3rem;
+    padding: 1.4rem 1.9rem;
+
+    transition: 0.3s;
+
+    border: solid 1px #dfe1e5;
+    border-radius: 10rem;
+
+    color: #222;
+}
+
+input[type='search']:focus {
+    transform: scale(1.04);
+
+    border: transparent;
+
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+
+    font-size: 1.5rem;
+}
+
+.btn {
+    margin: 0 0.5rem;
+    padding: 1.1rem 1.9rem;
+
+    transition: 0.3s;
+
+    border: solid 1px #eff1f5;
+    border-radius: 4px;
+
+    background-color: #f2f2f2;
+
+    color: #666;
+    letter-spacing: 0.035em;
+
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+
+    border: solid 1px #dfe1e5;
+
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.additional-language a {
+    margin: 0 0.3rem;
+}
+
+/* footer
+--------------------------------------------------*/
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+
+    background: violet;
 }
